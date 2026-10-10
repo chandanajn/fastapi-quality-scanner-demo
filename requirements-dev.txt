@@ -1,0 +1,7 @@
+-r requirements.txt
+mypy
+pylint
+flake8
+bandit
+pip-audit
+detect-secrets
