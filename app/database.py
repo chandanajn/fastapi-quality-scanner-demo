@@ -6,7 +6,9 @@ from .config import DATABASE_URL
 
 engine = create_engine(DATABASE_URL)
 
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)  # pylint: disable=invalid-name
+SessionLocal = sessionmaker(  # pylint: disable=invalid-name
+    autocommit=False, autoflush=False, bind=engine
+)
 
 
 def get_db():
