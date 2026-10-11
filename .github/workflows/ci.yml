@@ -54,7 +54,7 @@ jobs:
         run: python -m pylint app tests --exit-zero
 
       - name: Run Mypy (Static Type Checker)
-        run: python -m mypy app tests --exit-zero
+        run: python -m mypy app tests
 
       - name: Run Bandit (Security Vulnerability Scanner - SAST)
         run: python -m bandit -r app tests
